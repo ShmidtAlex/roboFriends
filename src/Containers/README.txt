@@ -1,0 +1,1 @@
+this folder named after the word 'contain', because of all files in this folder contains states. in this folder I included all smart components, which have any state. they all  written by using /class/ syntax.
