@@ -1,17 +1,17 @@
-import { CHANGE_SEARCHFIELD } from './constants.js';
+import { CHANGE_SEARCHFIELD } from './constants';
 //import './actions.js';
 
-const initialState = {
-  searchField: 'boom',
+const initialStateSearch = {
+  //searchRobots: {
+    searchField: '',
+  //}
 }
 
-export const searchRobots = (state=initialState, action={}) => {
-  console.log(action.type);
+export const searchRobots = (state=initialStateSearch, action={}) => {
   switch(action.type) {
     case CHANGE_SEARCHFIELD: 
     //because of second Redux principle
-    console.log("it works")
-      return Object.assign({}, state, { searchField: action.payload } );
+      return Object.assign({}, state, {searchField: action.payload });
     default:
       return state;
   }
